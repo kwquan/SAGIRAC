@@ -1,10 +1,12 @@
 # SAGIRAC [Simple Algorithm for Getting Image Range And Class]
 In this project, we shall create 2 models that will enable our webcam to simultaneously detect targets[purple circle] & predict their distances. \
-There are 2 parts to this project: \
+There are 3 parts to this project: \
 The first part is Object Detection. \
 This is where we do transfer learning for YOLOv5 using our custom dataset. \
 The second part is Distance Estimation. \
 This is where we train a linear regression model using our custom dataset. 
+The third part is Model Deployment. \
+This is where everything comes together & both models will work together to output bounding box & distance prediction for video stream via webcam.
 
 ## Part 1: Object Detection 
 
@@ -74,3 +76,15 @@ Before proceeding further, let's check if linear relationship holds true:
 
 This graph shows distance plotted against max dim[train images]. \
 Although relationship is not exactly linear, a linear equation provides a good estimate for target distance and hence we shall stick to linear regression for now. 
+
+Run Modeling part in real_time_detection.ipynb. \
+This will train our linear regression model & save it to pickle so that it can be used later. 
+
+## Part 3: Model Deployment
+
+Finally we are ready to see our models in action! 
+
+Run the code block under "Main code block for detecting object & predicting distance using webcam" section & observe the results. \
+If everything is done correctly, you should see a window open up showing the video stream on your webcam with the bounding box, class probability & distance estimation:
+![alt text](https://github.com/kwquan/SAGIRAC/blob/main/prediction_example_2.png] 
+
