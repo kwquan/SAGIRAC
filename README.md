@@ -36,5 +36,6 @@ Once the annotations are done & labels downloaded, one can see that they are tex
 [class, midpoint_x, midpoint_y, box_width, box_height] expressed as ratio of image dimensions. 
 
 Before proceeding further, save the files in their respective folders for YOLOV5 re-training:
+
 ![alt text](https://github.com/kwquan/SAGIRAC/blob/main/files.png)
 
