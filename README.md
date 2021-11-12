@@ -87,5 +87,5 @@ Finally we are ready to see our models in action!
 Run the code block under "Main code block for detecting object & predicting distance using webcam" section & observe the results. \
 If everything is done correctly, you should see a window open up showing the video stream on your webcam with the bounding box, class probability & distance estimation:
 
-![alt text](https://github.com/kwquan/SAGIRAC/blob/main/prediction_example_2.png] 
+![alt text](https://github.com/kwquan/SAGIRAC/blob/main/prediction_example_2.png)
 
