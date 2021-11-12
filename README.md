@@ -96,10 +96,10 @@ I also included a video to show the prediction in action [output.mp4]
 
 Of course, our models are not perfect & there are some issues:
 
-1) Table reflection sometimes gets predicted as target
+1) Table reflection sometimes gets predicted as target \
 Due to the glossy surface of the table used, the model sometimes predicts the target reflection as an actual target: 
 
-![alt text](https://github.com/kwquan/SAGIRAC/blob/main/prediction_comparison.jpg)
+![alt text](https://github.com/kwquan/SAGIRAC/blob/main/dirty_prediction.png)
 
 This can be mitigated by setting higher probability threshold for class prediction.
 
