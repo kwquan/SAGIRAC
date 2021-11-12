@@ -103,3 +103,12 @@ Due to the glossy surface of the table used, the model sometimes predicts the ta
 
 This can be mitigated by setting higher probability threshold for class prediction.
 
+2) Inaccurate predicted distances
+Due to overestimated distance labels from the ultrasonic sensors, the model tends to over-predict target distances by at least 10cm:
+Model prediction \
+![alt text](https://github.com/kwquan/SAGIRAC/blob/main/prediction_example.png)
+
+Actual distance \
+![alt text](https://github.com/kwquan/SAGIRAC/blob/main/prediction_comparison.jpg)
+
+
