@@ -42,11 +42,36 @@ Before proceeding further, save the files in their respective folders for YOLOV5
 All images have to be placed in images folder. \
 Here, I placed the 1000 augmented images in train, I randomly picked 97 of the original images as val & the remaining 3 as test. \
 Similarly, place the downloaded image annotations in the labels folder, under their respective folders[train/val]. \
-Remember, we will need to do annotations for the 1000 augmented images & the 97 original images[used for val] as well. \
+Remember, we will need to do annotations for the 1000 augmented images & the 97 original images[used for val] as well. 
 
 Once this is done, we are finally ready to re-train YOLOV5 last-layer weights on our custom dataset. \
 Run the Model Training part in SAGIRAC.ipynb. \
 Remember to run the model training & prediction parts in the command line. \
 Once that is done, print out 1 random test image & observe that model performs well on predicting our target.
 
+This concludes Part 1: Object Detection
 
+Part 1:
+Distance Estimation
+
+The idea for distance estimation is simple. \
+For our target, if bounding box is smaller, the target should be located further. \
+However, I decided against using bounding box area as some augmented images contain targets with only half of them appearing[due to our horizontal shift during augmentation]. \
+As such, I decided to pick the max of bounding box width & height & use it to predict target distance. 
+
+First, we create 2 CSVs: 
+The first CSV is created by looping through image names & getting their respective distance labels. \
+Columns will include 'filename' & 'distance'
+
+The second CSV is created from image annotations . \
+Columns will include 'filename','box_width' & 'box_height' 
+
+FInally, merge both CSVs on 'filename' column so that each row now represents an image, with it's bounding box dimensions & distance label. \
+We also create a 'max dim' column that takes the max of box_width & box_height. 
+
+Before proceeding further, let's check if linear relationship holds true:
+
+![alt text](https://github.com/kwquan/SAGIRAC/blob/main/linearity_check.png)
+
+This graph shows distance plotted against max dim[train images]. \
+Although relationship is not exactly linear, we shall stick to linear regression for now. 
