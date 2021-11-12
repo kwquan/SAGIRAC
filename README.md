@@ -1,12 +1,13 @@
 # SAGIRAC [Simple Algorithm for Getting Image Range And Class]
 In this project, we shall create 2 models that will enable our webcam to simultaneously detect targets[purple circle] & predict their distances[in cm]. \
-There are 3 parts to this project: \
+There are 4 parts to this project: \
 The first part is Object Detection. \
 This is where we do transfer learning for YOLOv5 using our custom dataset. \
 The second part is Distance Estimation. \
 This is where we train a linear regression model using our custom dataset. 
 The third part is Model Deployment. \
 This is where everything comes together & both models will work together to output bounding box & distance prediction for video stream via webcam.
+The last part is where we discuss some issues with our models. 
 
 ## Part 1: Object Detection 
 
@@ -88,4 +89,17 @@ Run the code block under "Main code block for detecting object & predicting dist
 If everything is done correctly, you should see a window open up showing the video stream on your webcam with the bounding box, class probability & distance estimation:
 
 ![alt text](https://github.com/kwquan/SAGIRAC/blob/main/prediction_example_2.png)
+
+I also included a video to show the prediction in action [output.mp4]
+
+## Part 4: Conclusion
+
+Of course, our models are not perfect & there are some issues:
+
+1) Table reflection sometimes gets predicted as target
+Due to the glossy surface of the table used, the model sometimes predicts the target reflection as an actual target: 
+
+![alt text](https://github.com/kwquan/SAGIRAC/blob/main/prediction_comparison.jpg)
+
+This can be mitigated by setting higher probability threshold for class prediction.
 
