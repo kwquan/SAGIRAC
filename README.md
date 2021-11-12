@@ -33,7 +33,7 @@ All we need to do is to upload images > select object detection > draw bounding 
 A word of caution: this part is very tedious as it involves annotating 1000 images
 
 Once the annotations are done & labels downloaded, one can see that they are text files with rows of 5 numbers:
-[class, midpoint_x, midpoint_y, box_width, box_height] expressed as ratio of image dimensions. \
+[class, midpoint_x, midpoint_y, box_width, box_height] expressed as ratio of image dimensions. 
 
 Before proceeding further, save the files in their respective folders for YOLOV5 re-training
 
