@@ -111,4 +111,9 @@ Model prediction \
 Actual distance \
 ![alt text](https://github.com/kwquan/SAGIRAC/blob/main/prediction_comparison.jpg)
 
+## Final Words
 
+I have to admit, this has been a tough & fun project. \
+I had my fair share of frustrations especially when dealing with the data collection, annotations & video-streaming. \
+But I also had my fair share of satisfaction when I finally get to see my product come to fruition. \
+With all being said, I hope that this walkthrough is able to provide you with a clear idea on how to set up a simple object detection & distance measuring device & I wish you success in your computer vision journey :)
