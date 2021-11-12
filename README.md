@@ -51,7 +51,7 @@ Once that is done, print out 1 random test image & observe that model performs w
 
 This concludes Part 1: Object Detection
 
-Part 1:
+Part 2:
 Distance Estimation
 
 The idea for distance estimation is simple. \
