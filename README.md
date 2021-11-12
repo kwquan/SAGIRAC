@@ -60,6 +60,7 @@ However, I decided against using bounding box area as some augmented images cont
 As such, I decided to pick the max of bounding box width & height & use it to predict target distance. 
 
 First, we create 2 CSVs: 
+
 The first CSV is created by looping through image names & getting their respective distance labels. \
 Columns will include 'filename' & 'distance'
 
@@ -74,4 +75,4 @@ Before proceeding further, let's check if linear relationship holds true:
 ![alt text](https://github.com/kwquan/SAGIRAC/blob/main/linearity_check.png)
 
 This graph shows distance plotted against max dim[train images]. \
-Although relationship is not exactly linear, we shall stick to linear regression for now. 
+Although relationship is not exactly linear, a linear equation provides a good estimate for target distance and hence we shall stick to linear regression for now. 
