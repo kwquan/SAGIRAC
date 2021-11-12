@@ -1,6 +1,6 @@
 # SAGIRAC [Simple Algorithm for Getting Image Range And Class]
 In this project, we shall create 2 models that will enable our webcam to simultaneously detect targets & predict their distances. \
-There are 2 parts to this project:
+There are 2 parts to this project: \
 The first part is Object Detection. \
 This is where we do transfer learning for YOLOv5 using our custom dataset. \
 The second part is Distance Estimation. \
