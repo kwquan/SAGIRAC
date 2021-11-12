@@ -35,5 +35,6 @@ A word of caution: this part is very tedious as it involves annotating 1000 imag
 Once the annotations are done & labels downloaded, one can see that they are text files with rows of 5 numbers:
 [class, midpoint_x, midpoint_y, box_width, box_height] expressed as ratio of image dimensions. 
 
-Before proceeding further, save the files in their respective folders for YOLOV5 re-training
+Before proceeding further, save the files in their respective folders for YOLOV5 re-training:
+![alt text](https://github.com/kwquan/SAGIRAC/blob/main/files.png)
 
