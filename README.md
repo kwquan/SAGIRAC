@@ -14,5 +14,20 @@ We make things simple, I used a webcam[logitech c920] for taking images & a HC-S
 ![alt text](https://github.com/kwquan/SAGIRAC/blob/main/project_setup.jpg) 
 ![alt text](https://github.com/kwquan/SAGIRAC/blob/main/project_setup_2.jpg) 
 The ultrasonic sensor uses SONAR to detect image distance by taking into account the speed of sound & time taken for signal to travel from the sensor, bounce off the target & return to the sensor. \
-The distance estimations are abit inaccurate & the sensor is known to over-estimate distances. \
-Nonetheless, we shall stick to it for now. 
+The distance estimations are a bit inaccurate & the sensor is known to over-estimate distances. \
+Nonetheless, we shall stick to it for now. \
+
+There are numerous instructional videos on how to set up ultrasound sensor with arduino so I won't go into the details here. \
+Webcam is also easy to set up as we only need to plug it into USB. \
+I also heavily-discounted the speed of sound in my arduino code to obtain better distance measurements. \
+
+With the set-up, we can proceed to take 100 images with their distance readings. \
+Next, we can run the data augmentation code in SAGIRAC.ipynb[in sagirac_dataset folder] to create 1000 augmented images. \
+This much data is required in order to ensure our trained models are able to perform well. \
+
+Next, we annotate images using makesense.ai[https://www.makesense.ai](url) \
+This is an online tool which allows us to draw the bounding box for each image & download the labels in YOLO format to facilitate transfer-learning. \
+All we need to do is to upload images > select object detection > draw bounding boxes > export labels as YOLO format. \
+![alt text](https://github.com/kwquan/SAGIRAC/blob/main/annotation_example.png)
+
+A word of caution: this part is very tedious as it involves annotating 1000 images
