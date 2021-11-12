@@ -9,6 +9,8 @@ The third part is Model Deployment. \
 This is where everything comes together & both models will work together to output bounding box & distance prediction for video stream via webcam.
 The last part is where we discuss some issues with our models. 
 
+2 notebooks required[SAGIRAC.ipynb & real_time_detection.ipynb]
+
 ## Part 1: Object Detection 
 
 Before we begin, we need to collect 100 images with their distance labels. \
