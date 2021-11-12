@@ -10,7 +10,7 @@ Part 1:
 Object Detection 
 
 Before we begin, we need to collect 100 images with their distance labels. \
-We make things simple, I used a webcam[logitech c920] for taking images & a HC-SR04 ultrasonic sensor for taking distance labels: 
+To make things simple, I used a webcam[logitech c920] for taking images & a HC-SR04 ultrasonic sensor for taking distance labels: 
 ![alt text](https://github.com/kwquan/SAGIRAC/blob/main/project_setup.jpg) 
 ![alt text](https://github.com/kwquan/SAGIRAC/blob/main/project_setup_2.jpg) 
 The ultrasonic sensor uses SONAR to detect image distance by taking into account the speed of sound & time taken for signal to travel from the sensor, bounce off the target & return to the sensor. \
