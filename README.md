@@ -6,7 +6,7 @@ This is where we do transfer learning for YOLOv5 using our custom dataset. \
 The second part is Distance Estimation. \
 This is where we train a linear regression model using our custom dataset. 
 
-Part 1:
+## Part 1:
 Object Detection 
 
 Before we begin, we need to collect 100 images with their distance labels. \
@@ -51,7 +51,7 @@ Once that is done, print out 1 random test image & observe that model performs w
 
 This concludes Part 1: Object Detection
 
-Part 2:
+## Part 2:
 Distance Estimation
 
 The idea for distance estimation is simple. \
