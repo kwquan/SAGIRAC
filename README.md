@@ -39,3 +39,14 @@ Before proceeding further, save the files in their respective folders for YOLOV5
 
 ![alt text](https://github.com/kwquan/SAGIRAC/blob/main/files.png)
 
+All images have to be placed in images folder. \
+Here, I placed the 1000 augmented images in train, I randomly picked 97 of the original images as val & the remaining 3 as test. \
+Similarly, place the downloaded image annotations in the labels folder, under their respective folders[train/val]. \
+Remember, we will need to do annotations for the 1000 augmented images & the 97 original images[used for val] as well. \
+
+Once this is done, we are finally ready to re-train YOLOV5 last-layer weights on our custom dataset. \
+Run the Model Training part in SAGIRAC.ipynb. \
+Remember to run the model training & prediction parts in the command line. \
+Once that is done, print out 1 random test image & observe that model performs well on predicting our target.
+
+
