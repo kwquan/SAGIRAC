@@ -4,7 +4,7 @@ There are 4 parts to this project: \
 The first part is Object Detection. \
 This is where we do transfer learning for YOLOv5 using our custom dataset. \
 The second part is Distance Estimation. \
-This is where we train a linear regression model using our custom dataset. 
+This is where we train a linear regression model using our custom dataset. \
 The third part is Model Deployment. \
 This is where everything comes together & both models will work together to output bounding box & distance prediction for video stream via webcam.
 The last part is where we discuss some issues with our models. 
